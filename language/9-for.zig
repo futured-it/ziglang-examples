@@ -12,4 +12,9 @@ pub fn main() !void {
     for (0..10) |i| {
         print("i = {d}\n", .{i});
     }
+
+    // And iterate over arrays with ranges
+    for (&arr, 0..) |elem, i| {
+        print("arr[{d}] = {d}\n", .{ i, elem });
+    }
 }
