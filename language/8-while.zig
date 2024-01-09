@@ -24,4 +24,7 @@ pub fn main() !void {
         print("j = {}\n", .{j});
         // ^ print the variable value
     }
+
+    // We can use the while loop with break expression
+    // And continue expression as well
 }
