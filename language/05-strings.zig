@@ -3,6 +3,7 @@ const print = std.debug.print;
 
 const str = "Hello, world!";
 // ^ type is [13:0]u8 - 13 bytes long array (because it's 13 symbols)
+// each symbol is 1 byte long (u8), because it's ASCII string
 
 pub fn main() !void {
     print("str = {s}\n", .{str});
